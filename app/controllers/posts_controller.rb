@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   
 
   def create
-    Post.create(content: params[:content])
+    post = Post.create(content: params[:content], checked: false)
   end
 
   def checked
